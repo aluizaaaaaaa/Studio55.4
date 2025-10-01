@@ -164,7 +164,7 @@ nav ul {
 
 }
 
-@media screen and (max-width: 390px){
+@media screen and (max-width: 480px){
 
     header{
 height: 80px;
@@ -192,3 +192,4 @@ height: 80px;
  }
 
 }
+
