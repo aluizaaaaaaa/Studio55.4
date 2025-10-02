@@ -166,25 +166,33 @@ nav ul {
 
 @media screen and (max-width: 480px){
 
+    body{
+        width: 390px;
+        padding: auto;
+    }
     header{
 height: 80px;
     }
     header img{
-        width: 110px;
+        width: 100px;
     }
      
     nav ul{
-       font-size: large;
-       gap: 30px;
-       margin-left: -550px;
-       padding: 80px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+        margin: 0;
+      padding: 10px;
+      gap: 20px;
+      font-size: 1rem;
+      flex-wrap: wrap;
       
     }
 
     .login-container{
-       width: 200%;
-        margin-left: -180px;
-        padding: 100px;
+       width: 100%;
+        margin-left: 0 auto;
+        padding: 20px;
  }
 
  .login-container [type= submit]{
@@ -192,4 +200,5 @@ height: 80px;
  }
 
 }
+
 
