@@ -40,8 +40,8 @@ body{
     
     gap: 150px;
   justify-content: center;
-  position: fixed;
-  left: 500px;
+ 
+  flex-wrap: wrap;
   display: flex;
 }
 nav ul{
@@ -59,7 +59,9 @@ nav ul a:hover {
     justify-content: center; 
     align-items: center;
 font-size: larger;
-padding: 200px;
+padding: 50px;
+width: 100%;
+margin: 0 auto;
 
 }
     
@@ -68,7 +70,9 @@ padding: 200px;
         flex-direction: column;
         color: #f8f3f3;
         font-size: larger;
-        width: 50%;
+        max-width: 400px;
+        width: 100%;
+        margin: 0 auto;
        
     }
         
@@ -110,12 +114,12 @@ padding: 200px;
         background-color: #cb9216;
         color: #292727;
         font-size: large;
-        padding: 10px;
-        margin-top: 30px;
+        padding: 12px;
+        margin-top: 30px auto 0 auto;
         width: 90%;
         justify-content: center;
-        margin-left: 36px;
         cursor: pointer;
+        display: block;
     }
 
 .home{
@@ -177,18 +181,17 @@ height: 80px;
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-        margin: 0;
-      padding: 10px;
+        
+      padding: 50px;
       gap: 20px;
-      font-size: 1rem;
-      flex-wrap: wrap;
-      
+      font-size: 16px;
+     
     }
 
     .login-container{
-       width: 100%;
-        margin-left: 0 auto;
-        padding: 20px;
+       width: 130%;
+        margin-left: -60px ;
+        padding: 70px;
  }
 
  .login-container [type= submit]{
@@ -196,6 +199,8 @@ height: 80px;
  }
 
 }
+
+
 
 
 
