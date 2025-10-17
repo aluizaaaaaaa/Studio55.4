@@ -130,29 +130,41 @@ padding: 100px;
 }
 
 
+ 
 @media screen and (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  header img {
+    width: 150px;
+    position: static;
+    margin-bottom: 10px;
+  }
+
   nav ul {
     position: static;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 60px;
-    font-size: 26px;
-    margin: 0;
-    padding: 15px;
-    margin-right: 150px;
-  }
-
-  header img {
-    width: 160px;
+    gap: 40px;
+    font-size: 22px;
+    padding: 0;
   }
 
   .login-container {
-    flex-direction: column;
-    padding: 80px 40px;
+    width: 80%;
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .login-container form {
-    width: 80%;
+    width: 100%;
   }
 }
 
@@ -161,13 +173,11 @@ padding: 100px;
   header {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: auto;
+    text-align: center;
   }
 
   header img {
-    position: static;
-    width: 140px;
+    width: 120px;
     margin-bottom: 10px;
   }
 
@@ -175,44 +185,27 @@ padding: 100px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    font-size: 22px;
-    position: static;
+    font-size: 20px;
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
   }
 
   .login-container {
-    padding: 60px 20px;
+    width: 90%;
+    max-width: 400px;
+    margin: 60px auto;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .login-container form {
     width: 100%;
-    font-size: medium;
   }
 
-  .login-container [type="submit"] {
+  .login-container [type=submit] {
+    width: 100%;
     margin-left: 0;
-    width: 100%;
   }
 }
-
-
-@media screen and (max-width: 480px) {
-  nav ul {
-    font-size: 18px;
-    gap: 15px;
-  }
-
-  .login-container {
-    padding: 40px 10px;
-  }
-
-  .login-container form {
-    width: 100%;
-  }
-
-  .login-container input {
-    font-size: small;
-  }
-}
-  
